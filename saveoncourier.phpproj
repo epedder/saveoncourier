@@ -7,6 +7,7 @@
     <RootNamespace>saveoncourier</RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <IISProjectUrl>http://localhost:24772/</IISProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -84,9 +85,13 @@
     <Folder Include=".git\refs\remotes" />
     <Folder Include=".git\refs\tags" />
     <Folder Include=".git\refs\remotes\origin" />
+    <Folder Include="templates" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Boxfile" />
     <Content Include="composer.json" />
+    <Content Include="templates\home.twig">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
 </Project>
