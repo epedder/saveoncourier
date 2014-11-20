@@ -1,0 +1,208 @@
+﻿{% block modal %}
+<!-- Modal Sign Up -->
+<div class="modal fade hide " id="signModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				
+			</div>
+			<div class="modal-body">
+				<!-- Sign Up Form -->
+					<div  class="logo">	
+						<img src="/static/img/logos/soc-logo-signup.png"/>
+					</div>	
+					<div>
+						<p class="instructions">
+							Get started now! Completing your account only takes one minute.
+						</p>
+					</div>
+					<br/>
+					<form class="form-horizontal clearfix " method="post" action="/step1" data-bind="submit: postLead" data-validate="parsley" id="modalSignupForm" style="text-align: center">
+					
+						<div class="field">
+						<div class="input-prepend">
+							<span class="add-on"><i class="icon-user"></i></span>
+							<input  name="name" type="text" class="pull-right parsley-validated" placeholder="Name" data-required="change" data-minlength="3" data-error-container="#errorName" data-error-message"Name must be at least 3 characters long." >
+						</div>
+						<div id="errorName" style="padding: 5px;"></div>
+						<!--<div id="errorName" style="display: none; color:#F00000; border: 1px solid #F00; padding: 5px; width: 237px; margin: 5px auto 0 auto; font-size: 10px;"> Error: XYZ </div>-->
+						</div>
+						 
+						<br>
+						<div class="field">			
+					 	<div class="input-prepend">
+							<span class="add-on"><i class="icon-book"></i></span>
+							<input name="phone" type="text" class="pull-right parsley-validated" placeholder="Phone" data-trigger="change" data-required="true" data-type="phone" data-error-container="#errorPhone" data-error-message="A contact phone number is required.">
+						</div>
+						<div id="errorPhone"  style="padding: 5px;"></div>
+						<!--<div id="errorPhone" style="display: none; color:#F00000; border: 1px solid #F00; padding: 5px; width: 237px; margin: 5px auto 0 auto; font-size: 10px;"> Error: XYZ </div>-->
+						</div>
+						<br/>
+	
+						<div class="field">
+						<div class="input-prepend">
+							<span class="add-on"><i class="icon-envelope"></i></span>
+							<input name="email" type="text" class="pull-right parsley-validated" placeholder="Email" data-trigger="change" data-required="true" data-type="email" data-error-container="#errorMail" data-error-message="A valid email address is required." >
+						</div>
+						<div id="errorMail"  style="padding: 5px;"></div>
+						<!--<div id="errorMail" style="display: none;  color:#F00000; border: 1px solid #F00; padding: 5px; width: 237px; margin: 5px auto 0 auto; font-size: 10px;"> Error: XYZ </div>-->
+						</div>
+						
+					</form>
+					<span class="input-prepend parsley-error-container pull-left"></span>
+				<!-- Sign Up Form Ends -->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success" id="submitSign">
+					Submit
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade hide " id="estimateModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				
+			</div>
+			<div class="modal-body">
+				<!-- Sign Up Form -->
+					<div  class="logo">	
+						<img src="/static/img/logos/soc-logo-signup.png"/>
+					</div>	
+					<div>
+						<p class="instructions">
+							Not sure yet? Try our FREE estimate calculator to see how much you could save:
+						</p>
+					</div>
+					<br/>
+					<div class="modalCalcHolder">
+					<form id="smallShippingCalc">
+				<div class="control-group inputFromZip">
+					<label class="control-label inputFromZip" for="inputFromZip"><span>From Zip Code</span></label>
+					<div class="controls">
+						<input type="text" id="inputFromPostalCodeModal" placeholder="e.g. 90210">
+					</div>
+				</div>
+				<div class="control-group inputToZip">
+					<label class="control-label" for="inputToZip">To Zip Code</label>
+					<div class="controls">
+						<input type="text" id="inputToPostalCodeModal"  placeholder="e.g. 20500">
+					</div>
+				</div>
+
+				<div class="control-group inputWeight">
+					<label class="control-label" for="inputWeight">Weight</label>
+					<div class="controls">
+						<select name="weightUnits" id="inputWeightModal">
+							<option value="1" selected="selected">1 lb</option>
+							<option value="2">2 lb</option>
+							<option value="3">3 lb</option>
+							<option value="4">4 lb</option>
+							<option value="5">5 lb</option>
+							<option value="6">6 lb</option>
+							<option value="7">7 lb</option>
+							<option value="8">8 lb</option>
+							<option value="9">9 lb</option>
+							<option value="10">10 lb</option>
+						</select>
+					</div>
+				</div>
+
+			</form>
+					</div>
+					
+					
+					
+					
+					<span class="input-prepend parsley-error-container pull-left"></span>
+				<!-- Sign Up Form Ends -->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success" id="submitModalEstimate">
+					Submit
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade hide " id="errorModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title">Error</h4>
+			</div>
+			<div class="modal-body">
+			
+			<div id="errorMessage">
+				
+			</div>
+			
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="modal fade hide " id="successModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title">Success!</h4>
+			</div>
+			<div class="modal-body">
+			
+			<div id="successMessage">
+				
+			</div>
+			
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="modal fade hide" id="priceModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title">Your Free Estimate</h4>
+			</div>
+			<div class="modal-body" style="background:url('/static/img/bottomShadow.png'); background-repeat: repeat-x;   background-position-y: bottom;">
+				<p id="priceMessage">
+					See how much you can save.
+				</p>
+				<div class="priceRender">
+
+				</div>
+			</div>
+			<div class="modal-footer">
+                <p><strong>*</strong> Our discounts are applied to published shipping rates, therefore all rates are subject to change</p>
+				<button type="button" class="btn btn-success" id="signFromModal">
+					Sign Up and Save
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+{% endblock modal %}

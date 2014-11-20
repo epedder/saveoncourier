@@ -85,12 +85,321 @@
     <Folder Include=".git\refs\remotes" />
     <Folder Include=".git\refs\tags" />
     <Folder Include=".git\refs\remotes\origin" />
+    <Folder Include="static" />
+    <Folder Include="static\css" />
+    <Folder Include="static\ico" />
+    <Folder Include="static\img\" />
+    <Folder Include="static\img\circles\" />
+    <Folder Include="static\img\email\" />
+    <Folder Include="static\img\icons\" />
+    <Folder Include="static\img\logos\" />
+    <Folder Include="static\img\originals\" />
+    <Folder Include="static\img\screenshots\" />
+    <Folder Include="static\img\slides\" />
+    <Folder Include="static\img\text\" />
+    <Folder Include="static\img\ui\" />
+    <Folder Include="static\js" />
     <Folder Include="templates" />
+    <Folder Include="templates\inc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Boxfile" />
     <Content Include="composer.json" />
+    <Content Include="static\css\soc.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\ico\favicon.ico">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\albany-state-street.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\background-texture.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\blueprint-lg.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\blueprint.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\blueprintPattern-ben_roe.pat">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\body-pattern.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\bottomShadow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\box-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\carriers-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\cloud-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\contract-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\customer-service-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\how-works-1-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\how-works-package-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\how-works-recipient-blueprint-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\how-works-recipient-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\how-works-recipient-white-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\how-works-sender-carriers.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\how-works-sender-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\how-works-shippment-bill-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\circles\money-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\email\img-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\email\soc-logo-email.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\email\soc-team-signature.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\fedex express 124 logo.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\glyphicons-halflings-white.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\glyphicons-halflings.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\contact_icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\dhl_logo.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\features_icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\fedex_logo_small.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\glyphicons-halflings-blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\glyphicons-halflings-white.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\glyphicons-halflings.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\i_face.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\logo-header-fedex.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\shipping-box-small.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\shipping-box.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\social_icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\thumb_more.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\upload.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\ups_logo.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\ups_logo_small.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\world-location-small.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\icons\world-location.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\img-circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\leftShadow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\logos\soc-logo-signup.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\advantages.ai">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\albany-state-street.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\circle.ai">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\circle.eps">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\how-works-sender-carriers.psd">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\logo-complete.ai">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\logo.ai">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\people-circle.ai">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\soc-logo-1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\soc-logo-1.psd">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\soc-logo-2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\originals\soc-logo-2.psd">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\rightShadow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\new-shipment-narrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\new-shipment-with-ship-button-narrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\set-package-1-narrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\set-package-2-narrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\set-recipient-narrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\set-recipient-white-narrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\set-recipient-white-no-shadow-narrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\set-shipement-all-data-narrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\set-shipement-little-data-narrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\set-shipement-no-data-narrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\set-shipment-with-estimate-narrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\set-shipper-narrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\screenshots\shippment.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\slides\cloud.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\slides\free.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\slides\global.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\slides\trust.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\soc-logo-banner.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\text\cloud.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\text\global.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\text\prepared.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\text\trust.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\ui\ajax-loader-tab.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\ui\footer_bg.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\ui\mail-icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\img\ui\phone-icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="static\js\soc.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\home.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="templates\home.twig">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\inc\base.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\inc\form-helpers.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\inc\inner.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\inc\meta.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\inc\modal.html">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

@@ -2,6 +2,7 @@
 
 //echo phpinfo();
 
+/*
 function listFolderFiles($dir){
     $ffs = scandir($dir);
     echo '<ol>';
@@ -16,6 +17,7 @@ function listFolderFiles($dir){
 }
 
 listFolderFiles('.');
+*/
 
 require_once('vendor/autoload.php');
 
@@ -26,7 +28,7 @@ $twig = new Twig_Environment($loader, array(
     'strict_variables' => true,
 ));
 $twig->addExtension(new Twig_Extension_Debug());
-echo $twig->render('home.twig', array());
+echo $twig->render('home.html', array());
 
 
 ?>

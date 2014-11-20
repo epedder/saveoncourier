@@ -1,0 +1,72 @@
+﻿{% extends "inc/base.html" %}
+{% block body_content %}
+    {{ super() }}
+		<div class="container marketing" style="margin-top: 65px;">
+        {% block breadcrumb %}
+			<ul class="breadcrumb">
+				<li>
+					<a href="../">Home</a><span class="divider">/</span>
+				</li>
+				<li class="active">
+					{% if title %} {{title}} {% endif %}
+				</li>
+			</ul>
+        {% endblock breadcrumb %}
+			<div class="row-fluid">
+				<div class="span10">
+					<h2>{% block inner_title %}Inner Title{% endblock inner_title %}</h2>
+				</div>
+			</div>
+        {% block inner_content %}
+			<div class="row-fluid">
+				<div class="span12">
+                    <p class="lead">
+                        Who we are
+                    </p>
+					<p>
+						You need to override block <strong>inner_content</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<br>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span8 pull-left">
+					<p class="lead">
+						Learn More About Us
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+				<div class="span3 pull-right">
+					<img src="/static/img/img-circle.png">
+				</div>
+            {% block rightbar %}
+                <div class="span3  sidebar pull-right">
+                    <h4 class="sidebar_header"> More... </h4>
+                    <ul class="sidebar_menu">
+                        {% if menu != "how-it-works" %}
+						<li>
+                            <a href="/how-it-works">How it works</a>
+                        </li>
+						{% else %}
+						<li>
+                            <a href="/about-us">About us</a>
+                        </li>
+						
+						{% endif %}
+						
+                        <li>
+                            <a href="/rates">Rates</a>
+                        </li>
+                        <li>
+                            <a href="/contact-us">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            {%  endblock rightbar %}
+			</div>
+        {% endblock inner_content %}
+		</div>
+		<!-- /container -->
+{% endblock %}

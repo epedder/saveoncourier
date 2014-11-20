@@ -1,0 +1,21 @@
+﻿{% macro render_field(field) %}
+    <label class="control-label" for="{{ field.name }}">{{ field.label }}</label>
+    <div class="control-group {% if field.errors %} error {% endif %}">
+        <div class="controls">
+            {{ field(**kwargs)|safe }}
+            {{ render_errors(field) }}
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro render_errors(field) %}
+    <span class="help-inline">
+            {% if field.errors %}
+                <ul class="unstyled parsley-error-list">
+                    {% for error in field.errors %}
+                        <li class="custom-error-message">{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+    </span>
+{% endmacro %}
