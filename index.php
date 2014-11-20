@@ -28,7 +28,7 @@ $twig = new Twig_Environment($loader, array(
     'strict_variables' => true,
 ));
 $twig->addExtension(new Twig_Extension_Debug());
-echo $twig->render('home.html', array());
+echo $twig->render('home.html', array('menu' => 'home'));
 
 
 ?>
