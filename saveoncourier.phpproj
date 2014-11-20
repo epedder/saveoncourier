@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>saveoncourier</Name>
+    <ProjectGuid>{1723db34-22aa-417b-a04e-f211c56904a3}</ProjectGuid>
+    <RootNamespace>saveoncourier</RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="appspec.yml" />
+    <Compile Include="index.php" />
+    <Compile Include="README.md" />
+    <Compile Include=".git\config" />
+    <Compile Include=".git\description" />
+    <Compile Include=".git\HEAD" />
+    <Compile Include=".git\index" />
+    <Compile Include=".git\packed-refs" />
+    <Compile Include=".git\hooks\applypatch-msg.sample" />
+    <Compile Include=".git\hooks\commit-msg.sample" />
+    <Compile Include=".git\hooks\post-update.sample" />
+    <Compile Include=".git\hooks\pre-applypatch.sample" />
+    <Compile Include=".git\hooks\pre-commit.sample" />
+    <Compile Include=".git\hooks\pre-push.sample" />
+    <Compile Include=".git\hooks\pre-rebase.sample" />
+    <Compile Include=".git\hooks\prepare-commit-msg.sample" />
+    <Compile Include=".git\hooks\update.sample" />
+    <Compile Include=".git\info\exclude" />
+    <Compile Include=".git\logs\HEAD" />
+    <Compile Include=".git\logs\refs\heads\master" />
+    <Compile Include=".git\logs\refs\remotes\origin\HEAD" />
+    <Compile Include=".git\objects\1b\584d0e0fbf6cb36ab8ff8aaa95c944269925a8" />
+    <Compile Include=".git\objects\1c\1cbe8ed1f271fc42b7f5d3bb760e0062966c7a" />
+    <Compile Include=".git\objects\2a\a45a46b0f66a40131617ecf890d8f78e016be5" />
+    <Compile Include=".git\objects\36\0c6f9ebb1db2b20f1eb1bcf9e929d4c77c1b4d" />
+    <Compile Include=".git\objects\47\e3ee440f1a3e3cdcb09f46ffc57d2e7967ff3c" />
+    <Compile Include=".git\objects\75\71b590e051295afdf65148e00eaa4d264d7838" />
+    <Compile Include=".git\objects\87\7d530237b5bc32708f28227612e7245123f5d5" />
+    <Compile Include=".git\objects\8d\8853d84a11759ce9c85ecb3438302f598da966" />
+    <Compile Include=".git\objects\95\b56cd5de2609971489ef43487afc477e05d4ee" />
+    <Compile Include=".git\objects\97\72ac6da6cae000c2831a96530357fb1a7e7ba3" />
+    <Compile Include=".git\objects\99\4dca94fb030f9034e7f36d76f5cc66594e426e" />
+    <Compile Include=".git\objects\9f\016e1fb8fcf912cb227827caaeab748b1ee0fc" />
+    <Compile Include=".git\objects\c1\c726a0e28b50f1b75d1eb85d3c36bd09227dd1" />
+    <Compile Include=".git\objects\dc\fd5a7a61522eb97054d8d3b93137fb4abeecad" />
+    <Compile Include=".git\refs\heads\master" />
+    <Compile Include=".git\refs\remotes\origin\HEAD" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git" />
+    <Folder Include=".git\hooks" />
+    <Folder Include=".git\info" />
+    <Folder Include=".git\logs" />
+    <Folder Include=".git\objects" />
+    <Folder Include=".git\refs" />
+    <Folder Include=".git\logs\refs" />
+    <Folder Include=".git\logs\refs\heads" />
+    <Folder Include=".git\logs\refs\remotes" />
+    <Folder Include=".git\logs\refs\remotes\origin" />
+    <Folder Include=".git\objects\1b" />
+    <Folder Include=".git\objects\1c" />
+    <Folder Include=".git\objects\2a" />
+    <Folder Include=".git\objects\36" />
+    <Folder Include=".git\objects\47" />
+    <Folder Include=".git\objects\75" />
+    <Folder Include=".git\objects\87" />
+    <Folder Include=".git\objects\8d" />
+    <Folder Include=".git\objects\95" />
+    <Folder Include=".git\objects\97" />
+    <Folder Include=".git\objects\99" />
+    <Folder Include=".git\objects\9f" />
+    <Folder Include=".git\objects\c1" />
+    <Folder Include=".git\objects\dc" />
+    <Folder Include=".git\objects\info" />
+    <Folder Include=".git\objects\pack" />
+    <Folder Include=".git\refs\heads" />
+    <Folder Include=".git\refs\remotes" />
+    <Folder Include=".git\refs\tags" />
+    <Folder Include=".git\refs\remotes\origin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Boxfile" />
+  </ItemGroup>
+</Project>

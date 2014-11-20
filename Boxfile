@@ -1,0 +1,12 @@
+﻿web1:
+  php_extensions:
+    - apc
+    - mbstring
+    - mcrypt
+    - pdo_mysql
+    - zip
+    - eaccelerator
+    - memcached
+    - curl
+  after_build:
+    - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install --prefer-source"
