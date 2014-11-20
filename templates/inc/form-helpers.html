@@ -1,4 +1,4 @@
-﻿{% macro render_field(field) %}
+{% macro render_field(field) %}
     <label class="control-label" for="{{ field.name }}">{{ field.label }}</label>
     <div class="control-group {% if field.errors %} error {% endif %}">
         <div class="controls">
