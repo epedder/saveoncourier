@@ -87,5 +87,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Boxfile" />
+    <Content Include="composer.json" />
   </ItemGroup>
 </Project>
