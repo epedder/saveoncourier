@@ -365,6 +365,14 @@ h2 {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 }
 
+.pitchContainer:not(:first-child) {
+    padding-left: 10px;
+}
+
+.pitchContainer:not(:last-child) {
+    padding-right: 10px;
+}
+
 p.salesPitch {
 	margin:15px auto 10px auto;
 	padding: 15px 20px;
