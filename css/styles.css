@@ -525,9 +525,11 @@ strong,
 	padding: 18px 15px;
 }
 
+/* ecp1 */
 .sticky-navigation .navbar-brand img {
-	max-width: 80px;
+	max-width: 210px !important;
 	-webkit-backface-visibility: hidden;
+    margin-top: 7px;
 }
 
 .sticky-navigation .main-navigation {
@@ -1114,6 +1116,8 @@ strong,
 /*---------------------------------------
    3.12 SECTION: CALL TO ACTION
 -----------------------------------------*/
+
+/*
 .call-to-action {
     background: url('../images/background-images/2.jpg') fixed no-repeat top center;
     -webkit-background-size: cover;
@@ -1135,6 +1139,7 @@ strong,
 .modal-content button {
 	width: 100%;
 }
+    */
 
 /*---------------------------------------
    3.13 SECTION: CONTACT INFO
@@ -1226,3 +1231,247 @@ strong,
 	color: #313131;
 }
 
+
+
+
+
+
+
+
+/* SAMPLE RATES */
+
+table.sample-rates {
+    color: #FFF;
+    width: 100%;
+    border-collapse: separate;
+}
+
+
+table.sample-rates th {
+    text-align: center;
+}
+
+table.sample-rates tr.rate-head th.their-rate {
+    border-left: 2px solid #FFF;
+    border-top: 2px solid #FFF;
+    border-top-left-radius: 5px;
+    padding-top: 5px;
+}
+
+table.sample-rates tr.rate-head-prefix th.our-rate {
+    border-left: 2px solid #FFF;
+    border-top: 2px solid #FFF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-right: 2px solid #FFF;
+    background-color: #4d4d4d;
+    font-size: 16pt;
+}
+
+table.sample-rates tr.rate-head th.our-rate {
+    border-left: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+}
+
+table.sample-rates tr.rate-head th.discount {
+    border-right: 2px solid #FFF;
+    border-top: 2px solid #FFF;
+    border-top-right-radius: 5px;
+    padding-top: 5px;
+}
+
+table.sample-rates td.their-rate {
+    border-left: 2px solid #FFF;
+}
+
+table.sample-rates td.our-rate {
+    border-left: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+    font-size: 14pt;
+    font-weight: bold;
+    background-color: #4d4d4d;
+}
+
+table.sample-rates td.discount {
+    border-right: 2px solid #FFF;
+}
+
+table.sample-rates tr.foot td.their-rate {
+    border-bottom: 2px solid #FFF;
+    border-bottom-left-radius: 5px;
+}
+
+table.sample-rates tr.foot td.discount {
+    border-bottom: 2px solid #FFF;
+    border-bottom-right-radius: 5px;
+}
+
+table.sample-rates tr.foot-suffix td.their-rate {
+    border: none;
+}
+
+table.sample-rates tr.foot td.our-rate {
+    border-left: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 2px solid #FFF;
+}
+
+table.sample-rates tr.foot-suffix td.discount {
+    border: none;
+}
+
+table.sample-rates div.route {
+    font-weight: bold;
+}
+
+table.sample-rates tbody tr:last-child td {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0);
+}
+
+table.sample-rates tbody tr td {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.25);
+}
+
+table.sample-rates #btn-sample-better-rates {
+    background-color: #4d4d4d;
+    margin-bottom: 10px;
+    border: 2px solid #FFF;
+}
+
+table.sample-rates #btn-sample-try {
+    background-color: #4794ff;
+    margin-bottom: 10px;
+    border: 2px solid #FFF;
+}
+
+table.sample-rates #btn-sample-start {
+    background-color: #4d4d4d;
+    margin-bottom: 10px;
+    border: 2px solid #FFF;
+}
+
+
+/* CONTACT US */
+
+.contact-us .contact-form {
+    text-align: left;
+}
+
+/* MODAL */
+
+.modal-content {
+    text-align: left;
+}
+
+/ * QUOTES */
+
+/* Quote Form */
+
+#start-quote label {
+    margin-top: 6px;
+}
+
+/* Quote Table */
+
+#quote-results div.quote-details,
+#quote-results div.quote-price-theirs,
+#quote-results div.quote-price-ours,
+#quote-results div.quote-discount {
+    display: table-cell;
+}
+
+#quote-results div.quote-details {
+    width: 100%;
+    min-width: 200px;
+    text-transform: uppercase;
+    font-size: 10pt;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    height: 40px;
+}
+
+#quote-results div.quote-price-theirs {
+    min-width: 80px;
+    text-align: center;
+}
+
+#quote-results div.quote-price-ours {
+    min-width: 80px;
+    text-align: center;
+}
+
+#quote-results div.quote-discount {
+    min-width: 80px;
+    text-align: center;
+}
+
+#quote-results div.pricing-header, #quote-results div.pricing-body-item {
+    white-space: nowrap;
+}
+
+#quote-results div.pricing-container {
+    overflow-x: auto;
+}
+
+#quote-results div.pricing-body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+table.shipping-quotes td, table.shipping-quotes th {
+    border: none;
+    padding: 8px;
+}
+
+table.shipping-quotes thead th.quote-price-theirs, table.shipping-quotes thead th.quote-discount {
+    border-top: 8px solid #FFF;
+    vertical-align: bottom;
+}
+
+table.shipping-quotes tfoot th.quote-price-theirs, table.shipping-quotes tfoot th.quote-discount {
+    border-bottom: 8px solid #FFF;
+    vertical-align: bottom;
+}
+
+table.shipping-quotes .quote-details {
+    text-align: left;
+    border: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    width: 60%;
+}
+
+table.shipping-quotes .quote-price-theirs {
+    text-align: center;
+    border: none;
+    background-color: rgba(0,0,0,0.05);
+}
+
+table.shipping-quotes .quote-price-ours {
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    font-size: 15pt;
+    background-color: #a5ee9c;
+}
+
+table.shipping-quotes .quote-discount {
+    text-align: center;
+    border: none;
+    background-color: rgba(0,0,0,0.05);
+}
+
+#quote-results .fixed-table-header {
+    border: none !important;
+}
+
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+    margin-right: 0;
+}
+
+.modal {
+    overflow-y: auto;
+}

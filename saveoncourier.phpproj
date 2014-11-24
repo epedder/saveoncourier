@@ -53,6 +53,9 @@
     <Compile Include=".git\objects\dc\fd5a7a61522eb97054d8d3b93137fb4abeecad" />
     <Compile Include=".git\refs\heads\master" />
     <Compile Include=".git\refs\remotes\origin\HEAD" />
+    <Compile Include="sendmail.php">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".git" />
@@ -85,6 +88,23 @@
     <Folder Include=".git\refs\remotes" />
     <Folder Include=".git\refs\tags" />
     <Folder Include=".git\refs\remotes\origin" />
+    <Folder Include="assets\" />
+    <Folder Include="assets\icons\" />
+    <Folder Include="assets\icons\fonts\" />
+    <Folder Include="css\" />
+    <Folder Include="css\colors\" />
+    <Folder Include="css\nivo_themes\" />
+    <Folder Include="css\nivo_themes\default\" />
+    <Folder Include="css\typography\" />
+    <Folder Include="css\typography\fonts\" />
+    <Folder Include="images\" />
+    <Folder Include="images\background-images\" />
+    <Folder Include="images\clients\" />
+    <Folder Include="images\companies\" />
+    <Folder Include="images\favicons\" />
+    <Folder Include="images\screenshots\" />
+    <Folder Include="images\team\" />
+    <Folder Include="js\" />
     <Folder Include="static" />
     <Folder Include="static\css" />
     <Folder Include="static\ico" />
@@ -103,8 +123,275 @@
     <Folder Include="templates\inc" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\icons\fonts\stamp-icons.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="assets\icons\fonts\stamp-icons.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="assets\icons\fonts\stamp-icons.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="assets\icons\fonts\stamp-icons.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="assets\icons\icons.css">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Boxfile" />
     <Content Include="composer.json" />
+    <Content Include="css\animate.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\bootstrap.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\colors\blue.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\colors\green.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\colors\green2.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\colors\orange.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\colors\purple.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\colors\red.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\nivo-lightbox.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\nivo_themes\default\close%402x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\nivo_themes\default\close.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\nivo_themes\default\default.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\nivo_themes\default\loading%402x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\nivo_themes\default\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\nivo_themes\default\next%402x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\nivo_themes\default\next.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\nivo_themes\default\prev%402x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\nivo_themes\default\prev.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\owl.carousel.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\owl.theme.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\responsive.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\styles.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\typography\fonts\lanenar_Lane.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\typography\fonts\lanenar_Lane.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\typography\style1.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\typography\style2.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\typography\style3.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\typography\style4.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\about-us.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\background-images\1.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\background-images\2.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\clients\1.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\clients\2.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\clients\3.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\companies\1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\companies\2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\companies\3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\companies\4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\companies\5.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\companies\6.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\favicons\favicon-120.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\favicons\favicon-152.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\favicons\favicon-57.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\favicons\favicon-72.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\favicons\favicon.ico">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\imac-ipad%402x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\imac-ipad.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\ipad-air%402x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\ipad-air.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\loader-blue.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\loader-green.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\loader-green2.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\loader-orange.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\loader-purple.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\loader-red.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\logo%402x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\logo-2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\logo-nav.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\logo.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\map-marker.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\map-marker.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\screenshots\1%402x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\screenshots\1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\team\1%402x.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\team\1.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\team\2%402x.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\team\2.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\team\3%402x.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\team\3.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\team\4%402x.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\team\4.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\bootstrap.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\custom.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\html5shiv.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\jquery.ajaxchimp.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\jquery.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\jquery.nav.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\jquery.stellar.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\nivo-lightbox.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\owl.carousel.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\retina.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\smoothscroll.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\wow.min.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="static\css\soc.css">
       <SubType>Content</SubType>
     </Content>
